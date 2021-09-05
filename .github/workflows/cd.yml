@@ -15,9 +15,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      
+
       - name: echo env
-        run: echo 
+        run: echo ${{ secrets.CTFL_ACCESS_TOKEN }}
 
       - name: build && export
         run: npm run build && npm run export
@@ -29,5 +29,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          branch: gh-pages
+          folder: build
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          # publish_dir: ./dist
