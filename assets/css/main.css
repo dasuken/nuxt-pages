@@ -1,0 +1,49 @@
+.v-application {
+  font-family: NotoSansJP-Medium;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+p {
+  margin-top: 1rem!important;
+  font-family: NotoSansJP-Medium;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/NotoSansJP-Regular.otf') format('truetype');
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/NotoSansJP-Medium.otf') format('truetype');
+  font-display: swap
+}
