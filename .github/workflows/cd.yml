@@ -17,7 +17,10 @@ jobs:
         run: npm install
 
       - name: echo env
-        run: echo ${{ secrets.CTFL_ACCESS_TOKEN }}
+        env:
+          CTFL_ACCESS_TOKEN: ${{ secrets.CTFL_ACCESS_TOKEN }}
+        run: |
+          echo $CTFL_ACCESS_TOKEN
 
       - name: build && export
         run: npm run build && npm run export
