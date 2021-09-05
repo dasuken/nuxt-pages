@@ -19,8 +19,9 @@ jobs:
       - name: build && export
         run: npm run build && npm run export
         env:
-          REACT_APP_APIKey: ${{ secrets.REACT_APP_APIKey }}
-          REACT_APP_APISecret: ${{ secrets.REACT_APP_APISecret }}
+          CTFL_CONTENT_TYPE_POST: ${{ secrets.CTFL_CONTENT_TYPE_POST }}
+          CTFL_SPACE: ${{ secrets.CTFL_SPACE }}
+          CTFL_ACCESS: ${{ secrets.CTFL_ACCESS }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
